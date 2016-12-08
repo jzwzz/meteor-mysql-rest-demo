@@ -1,5 +1,5 @@
 
-Demo = Meteor + MySQL + REST API
+Demo = Meteor + MySQL + REST API + Express
 
 fuction
 ===============================
@@ -24,11 +24,15 @@ config mysql
 access url:
 ------------------------
   rest api:
+  --------------------------
       http://localhost:3000/api/articles/1
 
   static pages:
+  --------------------------
       http://localhost:8081/index0.html
+
       http://localhost:8081/index1.html
+
       http://localhost:8081/
 
 
