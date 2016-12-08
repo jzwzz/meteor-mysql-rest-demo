@@ -1,13 +1,15 @@
+
+Demo = Meteor + MySQL + REST API
+
 fuction
 ===============================
-  1、add mysql by npm
+  1. add mysql by npm (No reactive)
 
-  2、add nimble:restivus by ./meteor/packages
+  2. add nimble:restivus by hand , direct modify ./meteor/packages
 
-  3、Use Meteor.wrapAsync(asyncFunc) sync return mysql search result
+  3. Use Meteor.wrapAsync(asyncFunc) for sync return mysql search result
 
-
-
+  4. use express npm for static pages
 
 config mysql
 -----------------------
@@ -16,9 +18,18 @@ config mysql
 
 
 
+
+
+
 access url:
 ------------------------
-  http://localhost:3000/api/articles/1
+  rest api:
+      http://localhost:3000/api/articles/1
+
+  static pages:
+      http://localhost:8081/index0.html
+      http://localhost:8081/index1.html
+      http://localhost:8081/
 
 
 QA:
@@ -26,3 +37,8 @@ QA:
 
   if has error with npm-bcrypt
   add npm-bcrypt@0.8.6_1 in .meteor/release
+
+
+
+TODOs:
+====================================
