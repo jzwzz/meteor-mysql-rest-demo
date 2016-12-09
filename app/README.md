@@ -44,5 +44,11 @@ QA:
 
 
 
+
+URL:
+=====================================
+  http://localhost:3000/ocpi/emsp/versions
+  http://localhost:3000/ocpi/emsp/2.0/
+
 TODOs:
 ====================================
