@@ -44,6 +44,7 @@ var Api = new Restivus({
 
   Api.addRoute('emsp/versions', {authRequired: false}, {
     get: function () {
+      console.log('>>> emsp/versions()');
 
       var returnValue = getBaseResult();
 
@@ -53,6 +54,8 @@ var Api = new Restivus({
           url: EMSP_BASE_URL + '/ocpi/cpo/2.0/'
         }
       ];
+
+      console.log('<<< emsp/versions()');
 
       return returnValue;
     }

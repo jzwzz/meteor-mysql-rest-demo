@@ -20,3 +20,21 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
+Template.buttons.events({
+  'click button'(event, instance) {
+
+    var dataObject = {}
+
+    Meteor.call("clientSideHello", dataObject, function(error, result){
+      if(error){
+        console.log("error", error);
+      }
+      if(result){
+        console.log("result1:", result)
+      }
+
+      console.log("result2:", result)
+
+    });
+  },
+});
